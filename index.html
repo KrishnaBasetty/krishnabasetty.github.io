@@ -5,111 +5,142 @@
   <title>Krishna Sai Srujan Teja Basetty - Software Development Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background: #f6f6f6; }
-    header { text-align: center; margin-bottom: 30px; }
-    nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
-    section { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);}
-    h1, h2 { color: #2a2a2a; }
-    .contact-info { margin-top: 15px; }
+    :root {
+      --primary: #1e40af;
+      --secondary: #0f172a;
+      --accent: #3b82f6;
+      --bg: #f8fafc;
+      --white: #ffffff;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--secondary);
+      margin: 0;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      background: var(--primary);
+      color: var(--white);
+      padding: 40px 20px;
+    }
+    header h1 { margin: 0; font-size: 2em; }
+    header h2 { margin: 5px 0 15px; font-weight: normal; color: #dbeafe; }
+    nav a {
+      color: #e0f2fe;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover { text-decoration: underline; }
+    section {
+      background: var(--white);
+      border-radius: 10px;
+      margin: 25px auto;
+      padding: 25px;
+      max-width: 900px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    h2 {
+      color: var(--primary);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 5px;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 10px; }
+    .contact-info p, .contact-info a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 15px;
+      font-size: 0.9em;
+      background: var(--secondary);
+      color: var(--white);
+    }
   </style>
 </head>
 <body>
   <header>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
     <h1>Krishna Sai Srujan Teja Basetty</h1>
     <h2>Software Development Engineer</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section id="home">
+  <section id="about">
     <p>
-      Hello, I'm Krishna Sai Srujan Teja Basetty, an experienced software engineer with over five years of proven expertise in full-stack development. I specialize in designing scalable microservices, data processing pipelines, and generative AI solutions, with deep skills in Java, Spring Boot, Docker, AWS, and Kubernetes. I am committed to building innovative and efficient systems, consistently driving excellence in every project. My approach blends technical depth, collaboration, and leadership to deliver high-quality, optimized solutions for real-world business needs.
+      I’m <strong>Krishna Sai Srujan Teja Basetty</strong>, an experienced Software Development Engineer with over five years of professional experience specializing in <strong>Java, Spring Boot, AWS, Docker, and Kubernetes</strong>. 
+      I’ve designed and deployed scalable microservices and high-performance applications, with strong foundations in system design, algorithms, and performance optimization. 
+      My work focuses on building robust distributed systems that drive reliability, scalability, and business growth.
     </p>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <section id="experience">
+    <h2>Professional Experience</h2>
     <ul>
       <li>
-        <strong>Scalable Microservices Development:</strong> Java, Spring Boot, Docker, Maven, AWS, Kubernetes.
-        Designed and implemented microservices for Mastercard, improving system efficiency by 30% and integrating Kafka for high-volume asynchronous data processing.
+        <strong>Software Development Engineer | Mastercard</strong> (Jan 2024 – Present)
+        <ul>
+          <li>Developed RESTful and GraphQL APIs in Spring Boot to handle high-volume payment traffic (~5M transactions/day).</li>
+          <li>Integrated <strong>Kafka</strong> for real-time event streaming and implemented tokenization to enhance transaction security.</li>
+          <li>Scaled fraud detection systems using ML-based rule engines, improving real-time prevention by 30%.</li>
+          <li>Optimized AWS cloud infrastructure, reducing compute costs by 25% through Lambda and RDS tuning.</li>
+          <li>Implemented CI/CD pipelines using Jenkins and GitHub Actions, ensuring full test coverage and secured API access.</li>
+        </ul>
       </li>
       <li>
-        <strong>AWS Data Processing Pipeline:</strong> Java, Spring Boot, AWS Lambda, S3, SQS, SNS, ECS, ECR, EC2, CloudWatch. Built a pipeline starting with SFTP ingestion, using Lambda and SQS for robust sequential processing and SNS for multi-stage error reporting.
+        <strong>Software Development Engineer | 7-Eleven</strong> (Jun 2019 – Jul 2022)
+        <ul>
+          <li>Built <strong>7now.com</strong> (7-Eleven’s e-commerce platform) with Java Spring MVC and AngularJS.</li>
+          <li>Decomposed legacy monoliths into cloud-native microservices on AWS (Lambda, API Gateway, DynamoDB).</li>
+          <li>Enhanced performance with optimized algorithms and introduced automated backup/recovery, reducing downtime by 50%.</li>
+        </ul>
       </li>
       <li>
-        <strong>Machine Learning Infrastructure for Generative AI:</strong> Python, TensorFlow/PyTorch, Docker, Kubernetes, AWS, Hugging Face, OpenAI APIs. Deployed and maintained ML models for multimodal workloads, building pipelines for preprocessing, training, and evaluation.
-      </li>
-      <li>
-        <strong>7now.com Web App:</strong> Java, Spring Boot, AngularJS, AWS. Developed deals, ordering, and checkout functionality with Redux-based state management, optimizing system reliability and reducing downtime.
-      </li>
-      <li>
-        <strong>Full Stack Ad Platform:</strong> JavaScript, TypeScript, MongoDB. Created a web platform for custom ad templates and print orders, driving new revenue streams in education retail.
+        <strong>Graduate Teaching Assistant | University of Central Missouri</strong> (Aug 2022 – Dec 2023)
+        <ul>
+          <li>Guided students in programming and data structure courses, assisting in project implementation and debugging.</li>
+        </ul>
       </li>
     </ul>
   </section>
 
   <section id="skills">
-    <h2>Key Skills</h2>
+    <h2>Technical Skills</h2>
     <ul>
-      <li><strong>Programming Languages:</strong> Java, JavaScript, TypeScript, Python</li>
-      <li><strong>Front-End:</strong> HTML, CSS, Angular, TypeScript</li>
-      <li><strong>Back-End:</strong> Java, Spring Boot, Maven, RESTful API, RDF4J</li>
-      <li><strong>Cloud & DevOps:</strong> AWS (Lambda, ECS, EC2, ECR, S3, SNS, SQS, CloudWatch, IAM), Docker, Kubernetes, Jenkins, GitHub Actions</li>
+      <li><strong>Languages:</strong> Java, JavaScript, TypeScript, Python</li>
+      <li><strong>Frameworks:</strong> Spring Boot, Angular, Maven</li>
+      <li><strong>Cloud & DevOps:</strong> AWS (Lambda, ECS, S3, SQS, SNS, CloudWatch), Docker, Kubernetes, Jenkins, GitHub Actions</li>
       <li><strong>Databases:</strong> MySQL, PostgreSQL, GraphDB, MongoDB</li>
-      <li><strong>Testing & Monitoring:</strong> JMeter, Log4j, Junit, CloudWatch</li>
-      <li><strong>Additional Tools:</strong> Kafka, GitHub</li>
-    </ul>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li>
-        <strong>Software Development Engineer, Mastercard</strong> (Jan 2024 - Present)
-        <ul>
-          <li>Designed microservices, improving system efficiency and integrating Kafka for resilient data processing.</li>
-          <li>Developed RESTful APIs and optimized backend integration for the Angular frontend.</li>
-          <li>Performed code reviews, debugging, and performance tuning for large-scale applications.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Software Development Engineer, Tech Mahindra</strong> (Jun 2019 - Jul 2022)
-        <ul>
-          <li>Developed 7now.com web app features and optimized algos/data structures for enhanced performance.</li>
-          <li>Implemented backup and recovery processes, boosting reliability and reducing downtime by 50%.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Software Engineer Intern, Startup Squid</strong> (Jun 2018 - Jul 2019)
-        <ul>
-          <li>Developed full-stack web-based ad platform, introducing new revenue models.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Graduate Teaching Assistant, University of Central Missouri</strong> (Aug 2022 - Dec 2023)
-        <ul>
-          <li>Assisted in undergraduate computing courses, guided projects, and provided instructional support.</li>
-        </ul>
-      </li>
+      <li><strong>Testing:</strong> JUnit, Mockito, JMeter</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <div class="contact-info">
-      <p><strong>Phone:</strong> 636 352-6088</p>
-      <p><strong>Email:</strong> basettysrujan1998@gmail.com</p>
-      <p><strong>Location:</strong> St. Louis, Missouri, USA</p>
-      <p><strong>Links:</strong> <a href="https://github.com/KrishnaBasetty">Github</a>, <a href="#">Linkedin</a></p>
+      <p><strong>Email:</strong> <a href="mailto:basettysrujan1998@gmail.com">basettysrujan1998@gmail.com</a></p>
+      <p><strong>Phone:</strong> (636) 352-6088</p>
+      <p><strong>Location:</strong> Santa Cruz, CA, USA</p>
+      <p><strong>Links:</strong>
+        <a href="https://github.com/KrishnaBasetty">GitHub</a> |
+        <a href="https://krishnabasetty.github.io/">Portfolio</a> |
+        <a href="https://www.linkedin.com/in/krishna-sai-srujan-teja-basetty-8ba177257">LinkedIn</a>
+      </p>
     </div>
-    <footer>
-      <p>&copy; 2025 Krishna Sai Srujan Teja Basetty</p>
-    </footer>
   </section>
+
+  <footer>
+    &copy; 2025 Krishna Sai Srujan Teja Basetty | Built with HTML & CSS
+  </footer>
 </body>
 </html>
